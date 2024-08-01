@@ -1,0 +1,214 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f; 
+}
+
+header {
+    background-color: #1e1e1e; 
+    color: #e0e0e0; 
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px; 
+    width: auto; 
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b0b0b0; 
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #25d1da; 
+    border-bottom: 2px solid #25d1da; 
+    padding-bottom: 2px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    height: 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #444; 
+    background-color: #333; 
+    color: #e0e0e0;
+    margin-right: 5px;
+}
+
+.search-container input:focus {
+    background-color: #444; 
+    color: #ffffff; 
+    border-color: #25d1da; 
+}
+
+.search-container i {
+    background-color: #1db954; 
+    border: none;
+    border-radius: 20px;
+    color: #ffffff; 
+    padding: 5px ;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+.cta {
+    margin-left: 50px;
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    text-decoration: none;
+    color: #e0e0e0;
+    background-color: #333; 
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.login-button:hover {
+    background-color: #444; 
+    color: #ffffff; 
+}
+
+.cta-button {
+    text-decoration: none;
+    color: #e0e0e0;
+    background-color: #333; 
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; 
+}
+
+.cta-button:hover {
+    background-color: #1db954; 
+    color: #ffffff; 
+}
+
+.podcasts {
+    padding: 20px 0;
+    background-color: #1e1e1e;
+}
+
+.podcasts h2:hover {
+    transform: scale(1.1);
+}
+
+.podcasts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.podcast {
+    flex: 1 1 calc(33.333% - 40px);
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.podcast:hover {
+    background-color: #444;
+}
+
+.podcast img {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.podcast-info {
+    text-align: center;
+}
+
+.podcast-info h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.podcast-info p {
+    margin: 5px 0 10px;
+    color: #b0b0b0;
+}
+
+.podcast {
+    height: 40vh;
+    width: 35vw;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.play-button, .cta-button {
+    background-color: #1db954;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover, .cta-button:hover {
+    background-color: #1ed760;
+}
+
+audio {
+    margin-top: 20px;
+    width: 100%;
+}
